@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MoshCodeApplication<moshCode>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.moshCourse.moshCode.MoshCodeApplication",
+            "projectName": "moshCode",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
