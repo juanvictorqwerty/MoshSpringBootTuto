@@ -1,11 +1,18 @@
 package com.moshCourse.moshCode;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller//define this class as a controller, and spring will automatically create an instance of this class and manage its lifecycle
 public class HomeController {
-    
+    @Value("${spring.application.name}")//inject the value of the property defined in the application.properties file, and this value will be injected when the instance of this class is created, and it will be shared by all the methods in this class
+    private String appName;
+    @Value("${app.page-size}")
+    private int pageSize;
+    @Value("${server.port}") //change the port number of the application, and this value will be injected when the instance of this class is created, and it will be shared by all the methods in this class
+    private int port;
+    //this is a field, and it will be initialized when the instance of this class is created, and it will be shared by all the methods in this class
     @RequestMapping("/")//define the request to the root
     public String index(){
         String viewName = getViewName();
