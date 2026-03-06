@@ -10,7 +10,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MoshCodeApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MoshCodeApplication.class, args);
+	//	SpringApplication.run(MoshCodeApplication.class, args);
+
+	var orderService = new OrderService(new StripePaymentService());
+	orderService.placeOrder();
 	}
 
 }
