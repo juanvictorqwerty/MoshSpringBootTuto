@@ -17,3 +17,10 @@ public class MoshCodeApplication {
 	}
 
 }
+//open closed principle: open for extension, closed for modification, we can add new payment services without modifying the existing code, and we can use the existing code without worrying about breaking it.
+//add new classes without modifying the existing code, we can add new payment services without modifying the existing code, and we can use the existing code without worrying about breaking it.
+//@Service Business logic
+// @Repository Data access logic
+// @Controller Web layer logic
+//RestController: @RestController is a specialized version of @Controller that combines @Controller and @ResponseBody, which means that it is used to create RESTful web services. It is typically used to handle HTTP requests and return JSON or XML responses.
+//restart the video a 1h
