@@ -4,15 +4,14 @@ import java.util.logging.Logger;
 
 public class OrderService {
     Logger logger = Logger.getLogger(OrderService.class.getName());
-    private PaymentService paymentService;
+    private PaymentService PaymentService;
 
-    public OrderService(PaymentService paymentService) {
-        this.paymentService = paymentService;
+    public OrderService(PaymentService PaymentService) {
+        this.PaymentService = PaymentService;
     }
 
     public void placeOrder(){
         logger.info("Order placed");
-        var paymentService = new StripePaymentService();
-        paymentService.processPayment(100); 
+        PaymentService.processPayment(100); 
     }
 }

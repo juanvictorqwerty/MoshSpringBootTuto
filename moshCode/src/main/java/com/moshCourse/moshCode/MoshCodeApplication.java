@@ -12,7 +12,7 @@ public class MoshCodeApplication {
 	public static void main(String[] args) {
 	//	SpringApplication.run(MoshCodeApplication.class, args);
 
-	var orderService = new OrderService(new StripePaymentService());
+	var orderService = new OrderService(new PayPalPaymentService());
 	orderService.placeOrder();
 	}
 
