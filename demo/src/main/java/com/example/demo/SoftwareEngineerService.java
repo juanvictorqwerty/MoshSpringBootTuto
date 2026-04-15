@@ -27,4 +27,8 @@ public class SoftwareEngineerService {
     public void updateSoftwareEngineer(Integer id, SoftareEngineer softareEngineer) {
         softwareEngineerRepo.save(softareEngineer);
     }
+
+    public SoftareEngineer getSoftwareEngineer(Integer id) {
+        return softwareEngineerRepo.findById(id).get();
+    }
 }

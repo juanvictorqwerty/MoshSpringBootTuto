@@ -41,4 +41,8 @@ public class SoftwareEngineerController {
         softwareEngineerService.updateSoftwareEngineer(id, softareEngineer);
     }
 
+    @GetMapping("{id}")
+    public SoftareEngineer getSoftwareEngineer(@PathVariable("id") Integer id) {
+        return softwareEngineerService.getSoftwareEngineer(id);
+    }
 }
