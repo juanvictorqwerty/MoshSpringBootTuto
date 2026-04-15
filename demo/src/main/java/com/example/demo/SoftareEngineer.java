@@ -15,6 +15,9 @@ public class SoftareEngineer {
     private String name;
     private String techstack;
 
+    public SoftareEngineer() {
+    }
+
     public SoftareEngineer(Integer id, String name, String techstack) {
         this.id = id;
         this.name = name;
